@@ -1533,11 +1533,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matheus.campos\\source\\repos\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
+      "projectUniqueName": "C:\\Users\\matheus.campos\\source\\EstudoAPIs\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
       "projectName": "FilmesApi",
-      "projectPath": "C:\\Users\\matheus.campos\\source\\repos\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
+      "projectPath": "C:\\Users\\matheus.campos\\source\\EstudoAPIs\\FilmesApi\\FilmesApi\\FilmesApi.csproj",
       "packagesPath": "C:\\Users\\matheus.campos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matheus.campos\\source\\repos\\FilmesApi\\FilmesApi\\obj\\",
+      "outputPath": "C:\\Users\\matheus.campos\\source\\EstudoAPIs\\FilmesApi\\FilmesApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matheus.campos\\AppData\\Roaming\\NuGet\\NuGet.Config",
