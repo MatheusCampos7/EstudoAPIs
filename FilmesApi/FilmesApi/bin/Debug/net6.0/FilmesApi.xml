@@ -12,5 +12,30 @@
             <returns></returns>
             <response code="201">Caso inserção seja feita com sucesso</response>
         </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmes(System.Int32,System.Int32)">
+            <summary>
+            Consulta os filmes do banco de dados
+            </summary>  
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmePorId(System.Int32)">
+            <summary>
+            Consulta um filme do banco de dados baseado no id
+            </summary>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AtualizaFilme(System.Int32,FilmesApi.Data.Dtos.UpdateFilmeDto)">
+            <summary>
+            Atualização de filme no banco de dados baseado no id
+            </summary>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.AtualizaFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesApi.Data.Dtos.UpdateFilmeDto})">
+            <summary>
+            Atualização parcial de filme no banco de dados baseado no id
+            </summary>
+        </member>
+        <member name="M:FilmesApi.Controllers.FilmeController.DeletaFilme(System.Int32)">
+            <summary>
+            Exclusão de filme no banco de dados baseado no id
+            </summary>
+        </member>
     </members>
 </doc>

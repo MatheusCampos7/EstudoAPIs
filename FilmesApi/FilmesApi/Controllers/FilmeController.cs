@@ -38,12 +38,18 @@ public class FilmeController : ControllerBase
         return CreatedAtAction(nameof(RecuperaFilmePorId), new { id = filme.Id }, filme);
     }
 
+    /// <summary>
+    /// Consulta os filmes do banco de dados
+    /// </summary>  
     [HttpGet]
     public IEnumerable<ReadFilmeDto> RecuperaFilmes([FromQuery] int skip = 0, [FromQuery] int take = 50)
     {
         return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take));
     }
 
+    /// <summary>
+    /// Consulta um filme do banco de dados baseado no id
+    /// </summary>
     [HttpGet("{id}")]
     public IActionResult RecuperaFilmePorId(int id)
     {
@@ -55,6 +61,9 @@ public class FilmeController : ControllerBase
 
     }
 
+    /// <summary>
+    /// Atualização de filme no banco de dados baseado no id
+    /// </summary>
     [HttpPut("{id}")]
     public IActionResult AtualizaFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
     {
@@ -66,6 +75,9 @@ public class FilmeController : ControllerBase
 
     }
 
+    /// <summary>
+    /// Atualização parcial de filme no banco de dados baseado no id
+    /// </summary>
     [HttpPatch("{id}")]
     public IActionResult AtualizaFilmeParcial(int id, JsonPatchDocument<UpdateFilmeDto> patch )
     {
@@ -87,6 +99,9 @@ public class FilmeController : ControllerBase
 
     }
 
+    /// <summary>
+    /// Exclusão de filme no banco de dados baseado no id
+    /// </summary>
     [HttpDelete("{id}")]
     public IActionResult DeletaFilme(int id) 
     {
