@@ -12,7 +12,7 @@
             <returns></returns>
             <response code="201">Caso inserção seja feita com sucesso</response>
         </member>
-        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmes(System.Int32,System.Int32)">
+        <member name="M:FilmesApi.Controllers.FilmeController.RecuperaFilmes(System.Int32,System.Int32,System.String)">
             <summary>
             Consulta os filmes do banco de dados
             </summary>  
